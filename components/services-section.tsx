@@ -8,7 +8,11 @@ const services = [
   {
     icon: Plane,
     title: "Tourist Visa",
-    description: "Quick & easy tourist visas for Singapore, Malaysia, Dubai, Thailand, Europe & more.",
+    description: (
+      <>
+        Quick & easy tourist visas for Singapore, <span className="text-accent font-bold">Russia</span>, Dubai, Thailand, Europe & more.
+      </>
+    ),
     features: ["Fast Processing", "Document Support", "Expert Guidance"],
   },
   {
