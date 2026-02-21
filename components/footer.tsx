@@ -13,8 +13,8 @@ export function Footer() {
                 <span className="text-accent-foreground font-bold text-lg">S</span>
               </div>
               <div>
-                <h1 className="text-xl font-bold">STARLINE</h1>
-                <p className="text-xs text-primary-foreground/80 -mt-1">VISAS</p>
+                <h1 className="text-xl font-bold">SDM</h1>
+                <p className="text-xs text-primary-foreground/80 -mt-1">VISA SERVICES</p>
               </div>
             </div>
             <p className="text-primary-foreground/80 mb-6 text-pretty">
@@ -117,11 +117,11 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0" />
-                <p className="text-primary-foreground/80 text-sm">+91 9876 12 3456</p>
+                <p className="text-primary-foreground/80 text-sm">+91 7977603184</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                <p className="text-primary-foreground/80 text-sm">info@starlinevisas.com</p>
+                <p className="text-primary-foreground/80 text-sm">sdmvisaservices@yahoo.com</p>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 Starline Visas. All rights reserved. | Privacy Policy | Terms of Service
+            © 2024 SDM Visa Services. All rights reserved. | Privacy Policy | Terms of Service
           </p>
         </div>
       </div>

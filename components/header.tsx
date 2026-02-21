@@ -13,8 +13,8 @@ export function Header() {
                 <span className="text-accent-foreground font-bold text-lg">S</span>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-primary">STARLINE</h1>
-                <p className="text-xs text-muted-foreground -mt-1">VISAS</p>
+                <h1 className="text-xl font-bold text-primary">SDM</h1>
+                <p className="text-xs text-muted-foreground -mt-1">VISA SERVICES</p>
               </div>
             </div>
           </div>
@@ -49,7 +49,7 @@ export function Header() {
             <div className="hidden lg:flex items-center space-x-2 text-sm">
               <Phone className="w-4 h-4 text-primary" />
               <span className="text-muted-foreground">For Consultation</span>
-              <span className="font-semibold text-primary">+91 9876 12 3456</span>
+              <span className="font-semibold text-primary">+91 7977603184</span>
             </div>
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Get Quote</Button>
           </div>

@@ -7,7 +7,7 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Starline Visas - Your Trusted Partner for Visa Services",
+  title: "SDM Visa Services - Your Trusted Partner for Visa Services",
   description:
     "Professional visa services and immigration solutions. We help you travel the world with expert guidance and support.",
   generator: "v0.app",
