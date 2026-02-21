@@ -15,7 +15,7 @@ export function Footer() {
             </div>
             <p className="text-primary-foreground/80 mb-6 text-pretty">
               Your trusted partner for visa services and immigration solutions. We help make your travel dreams come
-              true.
+              true. Visa Support any time (Special Russia)
             </p>
             <div className="flex space-x-4">
               <Button size="sm" variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
@@ -101,13 +101,19 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-6">Contact Info</h3>
             <div className="space-y-4">
+              <div className="mb-4">
+                <p className="text-primary-foreground font-semibold">Atit Kumar</p>
+                <p className="text-primary-foreground/80 text-sm">Proprietor</p>
+              </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-primary-foreground/80 text-sm">
-                    123 Business Street,
+                    Shop No. 1, Naurang Seva Society LBS Nagar,
                     <br />
-                    New Delhi, India 110001
+                    Kandar Pada, Dahisar (W),
+                    <br />
+                    Mumbai - 400 068 Maharashtra India.
                   </p>
                 </div>
               </div>
@@ -117,7 +123,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                <p className="text-primary-foreground/80 text-sm">sdmvisaservices@yahoo.com</p>
+                <p className="text-primary-foreground/80 text-sm">sdmvisaservices1@gmail.com</p>
               </div>
             </div>
           </div>
