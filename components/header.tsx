@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Phone } from "lucide-react"
+import Link from "next/link"
+import Image from "next/image"
 
 export function Header() {
   return (
@@ -8,40 +10,34 @@ export function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-lg">S</span>
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-primary">SDM</h1>
-                <p className="text-xs text-muted-foreground -mt-1">VISA SERVICES</p>
-              </div>
-            </div>
+            <Link href="/" className="flex items-center">
+              <Image src="/logo.jpg" alt="SDM Visa Services Logo" width={150} height={56} className="h-14 w-auto object-contain" />
+            </Link>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            <Link href="/" className="text-foreground hover:text-primary transition-colors">
               Home
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link href="#" className="text-foreground hover:text-primary transition-colors">
               About
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link href="#" className="text-foreground hover:text-primary transition-colors">
               Services
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link href="#" className="text-foreground hover:text-primary transition-colors">
               Visa
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link href="#" className="text-foreground hover:text-primary transition-colors">
               E-Visa
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link href="#" className="text-foreground hover:text-primary transition-colors">
               Career
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link href="#" className="text-foreground hover:text-primary transition-colors">
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Contact Button */}

@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
 
 export function Footer() {
   return (
@@ -8,14 +10,8 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-lg">S</span>
-              </div>
-              <div>
-                <h1 className="text-xl font-bold">SDM</h1>
-                <p className="text-xs text-primary-foreground/80 -mt-1">VISA SERVICES</p>
-              </div>
+            <div className="flex items-center mb-6">
+              <Image src="/logo.jpg" alt="SDM Visa Services Logo" width={200} height={80} className="h-20 w-auto object-contain bg-white p-2 rounded-lg" />
             </div>
             <p className="text-primary-foreground/80 mb-6 text-pretty">
               Your trusted partner for visa services and immigration solutions. We help make your travel dreams come
@@ -42,29 +38,29 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Our Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Visa Types
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Success Stories
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -74,29 +70,29 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-6">Our Services</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Tourist Visa
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Business Visa
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Student Visa
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Work Visa
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Immigration
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
