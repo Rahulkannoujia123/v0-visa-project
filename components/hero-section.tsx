@@ -11,7 +11,7 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-accent text-lg mb-4 font-medium">Welcome to Starline Visas</p>
+        <p className="text-accent text-lg mb-4 font-medium">Welcome to SDM Visa Services</p>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
           We Help You To
@@ -25,7 +25,7 @@ export function HeroSection() {
         </p>
 
         <p className="text-sm md:text-base mb-8 text-white/80">
-          We Are Specialist in Usa Visas, Uk Visas, Canada Visa, China Visa, Turkey Visa
+          We Are Specialist in Usa Visas, Uk Visas, Canada Visa, China Visa, Turkey Visa, Russia Visa
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
