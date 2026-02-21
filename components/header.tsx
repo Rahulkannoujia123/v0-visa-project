@@ -10,44 +10,33 @@ export function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
-              <Image src="/logo.jpg" alt="SDM Visa Services Logo" width={150} height={56} className="h-14 w-auto object-contain" />
+            <Link href="/" className="flex items-center gap-2">
+              <Image src="/logo.jpg" alt="SDM Logo" width={40} height={40} className="h-10 w-auto object-contain" />
+              <span className="text-xl font-bold text-primary">SDM Visa</span>
             </Link>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-foreground hover:text-primary transition-colors">
+            <Link href="#hero" className="text-foreground hover:text-primary transition-colors">
               Home
             </Link>
-            <Link href="#" className="text-foreground hover:text-primary transition-colors">
-              About
-            </Link>
-            <Link href="#" className="text-foreground hover:text-primary transition-colors">
+            <Link href="#services" className="text-foreground hover:text-primary transition-colors">
               Services
             </Link>
-            <Link href="#" className="text-foreground hover:text-primary transition-colors">
-              Visa
+            <Link href="#process" className="text-foreground hover:text-primary transition-colors">
+              Process
             </Link>
-            <Link href="#" className="text-foreground hover:text-primary transition-colors">
-              E-Visa
-            </Link>
-            <Link href="#" className="text-foreground hover:text-primary transition-colors">
-              Career
-            </Link>
-            <Link href="#" className="text-foreground hover:text-primary transition-colors">
-              Contact
+            <Link href="#testimonials" className="text-foreground hover:text-primary transition-colors">
+              Reviews
             </Link>
           </nav>
 
           {/* Contact Button */}
           <div className="flex items-center space-x-4">
-            <div className="hidden lg:flex items-center space-x-2 text-sm">
-              <Phone className="w-4 h-4 text-primary" />
-              <span className="text-muted-foreground">For Consultation</span>
-              <span className="font-semibold text-primary">+91 7977603184</span>
-            </div>
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Get Quote</Button>
+            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground hidden md:flex">
+              <Link href="tel:+917977603184">Call Now</Link>
+            </Button>
           </div>
         </div>
       </div>

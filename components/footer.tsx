@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { Phone, Mail, MapPin, Instagram, MessageCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -11,87 +11,80 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-6">
-              <Image src="/logo.jpg" alt="SDM Visa Services Logo" width={200} height={80} className="h-20 w-auto object-contain bg-white p-2 rounded-lg" />
+              <div className="text-2xl font-bold text-white flex items-center gap-2">
+                <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                  <Image src="/logo.jpg" alt="SDM" width={40} height={40} className="object-contain" />
+                </div>
+                SDM Visa
+              </div>
             </div>
             <p className="text-primary-foreground/80 mb-6 text-pretty">
-              Your trusted partner for visa services and immigration solutions. We help make your travel dreams come
-              true.
+              Your trusted partner for hassle-free visa services. We specialize in Tourist, Work, and Student visas for leading destinations.
             </p>
             <div className="flex space-x-4">
-              <Button size="sm" variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
-                <Facebook className="w-4 h-4" />
+              <Button asChild size="sm" variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
+                <Link href="https://wa.me/message/A7ONYLMLVHECG1"><MessageCircle className="w-4 h-4" /></Link>
               </Button>
-              <Button size="sm" variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
-                <Twitter className="w-4 h-4" />
-              </Button>
-              <Button size="sm" variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
-                <Instagram className="w-4 h-4" />
-              </Button>
-              <Button size="sm" variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
-                <Linkedin className="w-4 h-4" />
+              <Button asChild size="sm" variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
+                <Link href="https://www.instagram.com/?deoia=1"><Instagram className="w-4 h-4" /></Link>
               </Button>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-6">Services</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  About Us
+                <Link href="#services" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Tourist Visa
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Our Services
+                <Link href="#services" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Work Permit
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Visa Types
+                <Link href="#services" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Student Visa
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Success Stories
+                <Link href="#services" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Business Visa
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Contact Us
+                <Link href="#services" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                   Travel Insurance
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Support */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Our Services</h3>
+            <h3 className="text-lg font-semibold mb-6">Support</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Tourist Visa
+                <Link href="#contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link href="#hero" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  About Us
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Business Visa
+                  Privacy Policy
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Student Visa
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Work Visa
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Immigration
+                  Terms of Service
                 </Link>
               </li>
             </ul>
@@ -99,17 +92,13 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Contact Info</h3>
+            <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="text-primary-foreground/80 text-sm">
-                    123 Business Street,
-                    <br />
-                    New Delhi, India 110001
-                  </p>
-                </div>
+                <p className="text-primary-foreground/80 text-sm">
+                  Shop No. 1, Naurang Seva Society LBS Nagar, Dahisar (W), Mumbai - 400 068
+                </p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0" />

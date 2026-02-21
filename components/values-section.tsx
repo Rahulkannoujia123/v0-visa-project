@@ -1,89 +1,66 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Shield, Users, Globe, Award } from "lucide-react"
+import { Clock, IndianRupee, MessageCircle, UserCheck } from "lucide-react"
+
+const stats = [
+  { value: "99%", label: "Success Rate" },
+  { value: "24/7", label: "Support Available" },
+  { value: "10+", label: "Years Experience" },
+  { value: "5k+", label: "Visas Approved" },
+]
+
+const features = [
+  {
+    icon: Clock,
+    title: "Quick Turnaround",
+    description: "We prioritize your time with our fast-track processing system.",
+  },
+  {
+    icon: IndianRupee,
+    title: "Affordable Pricing",
+    description: "Competitive rates with no hidden charges or surprise fees.",
+  },
+  {
+    icon: MessageCircle,
+    title: "Personal Support",
+    description: "Dedicated support via WhatsApp and phone throughout the process.",
+  },
+  {
+    icon: UserCheck,
+    title: "Expert Guidance",
+    description: "Our team ensures valid documentation to minimize rejection risk.",
+  },
+]
 
 export function ValuesSection() {
   return (
     <section className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div>
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                <Award className="w-6 h-6 text-accent-foreground" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-primary">ABOUT COMPANY</h3>
-              </div>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Choose SDM Visa?</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            We combine expertise, transparency, and speed to deliver the best visa consultancy experience in Mumbai.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+          {stats.map((stat, index) => (
+            <div key={index} className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.value}</div>
+              <div className="text-muted-foreground font-medium">{stat.label}</div>
             </div>
+          ))}
+        </div>
 
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-balance">
-              Your trusted partner in visa services and travel
-            </h2>
-
-            <p className="text-muted-foreground mb-8 text-pretty">
-              With years of experience in immigration and visa services, we have helped thousands of clients achieve
-              their travel dreams. Our expert team provides personalized guidance and support throughout your visa
-              application process.
-            </p>
-
-            <div className="grid sm:grid-cols-2 gap-6">
-              <div className="flex items-start space-x-3">
-                <Shield className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold text-foreground mb-1">Trusted Service</h4>
-                  <p className="text-sm text-muted-foreground">Reliable and secure visa processing</p>
-                </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((feature, index) => (
+            <div key={index} className="flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-4 shadow-sm">
+                <feature.icon className="w-6 h-6 text-accent" />
               </div>
-
-              <div className="flex items-start space-x-3">
-                <Users className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold text-foreground mb-1">Expert Team</h4>
-                  <p className="text-sm text-muted-foreground">Professional immigration consultants</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3">
-                <Globe className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold text-foreground mb-1">Global Reach</h4>
-                  <p className="text-sm text-muted-foreground">Visa services for worldwide destinations</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3">
-                <Award className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold text-foreground mb-1">High Success Rate</h4>
-                  <p className="text-sm text-muted-foreground">Proven track record of approvals</p>
-                </div>
-              </div>
+              <h3 className="text-xl font-bold text-foreground mb-2">{feature.title}</h3>
+              <p className="text-muted-foreground text-sm">{feature.description}</p>
             </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="relative">
-            <Card className="overflow-hidden">
-              <CardContent className="p-0">
-                <img
-                  src="/professional-visa-consultation-office-with-documen.jpg"
-                  alt="Visa consultation"
-                  className="w-full h-[400px] object-cover"
-                />
-              </CardContent>
-            </Card>
-
-            {/* Floating Stats Card */}
-            <Card className="absolute -bottom-6 -left-6 bg-white shadow-lg">
-              <CardContent className="p-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">5000+</div>
-                  <div className="text-sm text-muted-foreground">Happy Clients</div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+          ))}
         </div>
       </div>
     </section>
