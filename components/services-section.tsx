@@ -8,19 +8,31 @@ const services = [
   {
     icon: Plane,
     title: "Tourist Visa",
-    description: "Quick & easy tourist visas for Singapore, Malaysia, Dubai, Thailand, Europe & more.",
+    description: (
+      <>
+        Quick & easy tourist visas for Singapore, <span className="text-accent font-bold">Russia</span>, Dubai, Thailand, Europe & more.
+      </>
+    ),
     features: ["Fast Processing", "Document Support", "Expert Guidance"],
   },
   {
     icon: Briefcase,
     title: "Work Visa",
-    description: "Expert guidance for work permits in Poland, Czech Republic, Lithuania & Croatia.",
+    description: (
+      <>
+        Expert guidance for work permits in Poland, Czech Republic, Lithuania & <span className="text-accent font-bold">Russia</span>.
+      </>
+    ),
     features: ["Work Permits", "Corporate Support", "Documentation"],
   },
   {
     icon: Users,
     title: "Study Visa",
-    description: "Fulfill your dream of studying abroad in UK, USA, Canada, Australia & Europe.",
+    description: (
+      <>
+        Fulfill your dream of studying abroad in UK, USA, Canada, <span className="text-accent font-bold">Russia</span> & Europe.
+      </>
+    ),
     features: ["University Admission", "Visa Filing", "Interview Prep"],
   },
   {
