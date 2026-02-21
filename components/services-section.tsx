@@ -18,13 +18,21 @@ const services = [
   {
     icon: Briefcase,
     title: "Work Visa",
-    description: "Expert guidance for work permits in Poland, Czech Republic, Lithuania & Croatia.",
+    description: (
+      <>
+        Expert guidance for work permits in Poland, Czech Republic, Lithuania & <span className="text-accent font-bold">Russia</span>.
+      </>
+    ),
     features: ["Work Permits", "Corporate Support", "Documentation"],
   },
   {
     icon: Users,
     title: "Study Visa",
-    description: "Fulfill your dream of studying abroad in UK, USA, Canada, Australia & Europe.",
+    description: (
+      <>
+        Fulfill your dream of studying abroad in UK, USA, Canada, <span className="text-accent font-bold">Russia</span> & Europe.
+      </>
+    ),
     features: ["University Admission", "Visa Filing", "Interview Prep"],
   },
   {
