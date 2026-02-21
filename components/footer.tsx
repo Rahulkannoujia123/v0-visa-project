@@ -1,0 +1,138 @@
+import { Button } from "@/components/ui/button"
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+
+export function Footer() {
+  return (
+    <footer className="bg-primary text-primary-foreground">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div>
+            <div className="flex items-center space-x-2 mb-6">
+              <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                <span className="text-accent-foreground font-bold text-lg">S</span>
+              </div>
+              <div>
+                <h1 className="text-xl font-bold">STARLINE</h1>
+                <p className="text-xs text-primary-foreground/80 -mt-1">VISAS</p>
+              </div>
+            </div>
+            <p className="text-primary-foreground/80 mb-6 text-pretty">
+              Your trusted partner for visa services and immigration solutions. We help make your travel dreams come
+              true.
+            </p>
+            <div className="flex space-x-4">
+              <Button size="sm" variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
+                <Facebook className="w-4 h-4" />
+              </Button>
+              <Button size="sm" variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
+                <Twitter className="w-4 h-4" />
+              </Button>
+              <Button size="sm" variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
+                <Instagram className="w-4 h-4" />
+              </Button>
+              <Button size="sm" variant="ghost" className="text-primary-foreground hover:bg-primary-foreground/10">
+                <Linkedin className="w-4 h-4" />
+              </Button>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Visa Types
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Success Stories
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6">Our Services</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Tourist Visa
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Business Visa
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Student Visa
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Work Visa
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  Immigration
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6">Contact Info</h3>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-primary-foreground/80 text-sm">
+                    123 Business Street,
+                    <br />
+                    New Delhi, India 110001
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-accent flex-shrink-0" />
+                <p className="text-primary-foreground/80 text-sm">+91 9876 12 3456</p>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-accent flex-shrink-0" />
+                <p className="text-primary-foreground/80 text-sm">info@starlinevisas.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
+          <p className="text-primary-foreground/60 text-sm">
+            © 2024 Starline Visas. All rights reserved. | Privacy Policy | Terms of Service
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
